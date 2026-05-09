@@ -1,0 +1,22 @@
+// User function Template for C++
+
+class Solution {
+  public:
+    int smallestSumSubarray(vector<int>& arr) {
+        // Code here
+        int n=arr.size();
+
+        int ans=arr[0];
+        int bestending=arr[0];
+
+        for(int i=1;i<n;i++) //arr[0] to already h so arr[1] se chalu kro
+        {
+            int v1=bestending+arr[i]; //pehle wala + abhi wala index;
+            int v2=arr[i]; //abhi jispe h "i" wo wala index;
+
+            bestending=min(v1,v2);//dono me se chhota ans jiska hoga
+            ans=min(ans,bestending);
+        }
+        return ans;
+    }
+};
