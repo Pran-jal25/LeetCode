@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/Pran-jal25/LeetCode/tree/master/0053-maximum-subarray) |
 | [0287-find-the-duplicate-number](https://github.com/Pran-jal25/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0724-find-pivot-index](https://github.com/Pran-jal25/LeetCode/tree/master/0724-find-pivot-index) |
+| [1749-maximum-absolute-sum-of-any-subarray](https://github.com/Pran-jal25/LeetCode/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
 ## Binary Search
 |  |
 | ------- |
@@ -40,4 +41,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/Pran-jal25/LeetCode/tree/master/0053-maximum-subarray) |
+| [1749-maximum-absolute-sum-of-any-subarray](https://github.com/Pran-jal25/LeetCode/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
 <!---LeetCode Topics End-->
