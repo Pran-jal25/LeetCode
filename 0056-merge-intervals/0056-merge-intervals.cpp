@@ -15,6 +15,7 @@ public:
 
             if(end>=s) //overlapping condition so (merge hoga);
             {
+                start=start;
                 end=max(end,e);
                 continue;
             } 
