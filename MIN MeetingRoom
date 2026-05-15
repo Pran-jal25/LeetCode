@@ -1,7 +1,7 @@
 class Solution {
   public:
     int minMeetingRooms(vector<int> &start, vector<int> &end) {
-        //code here
+        // code here
         int n=start.size();
         sort(start.begin(),start.end());
         sort(end.begin(),end.end());
@@ -10,7 +10,8 @@ class Solution {
         
         while(i<n && j<n)
         {
-            if(start[i]<end[j])
+            if(start[i]<end[j]) //next meeting starts BEFORE current meeting ends
+                                // so we need a new room
             {
                 room++;
                 res=max(res,room);
@@ -18,6 +19,8 @@ class Solution {
             }
             
             else  //start[i]>=end[j];
+            // one meeting already finished
+            // room becomes free
             {
                 room--;
                 j++;
