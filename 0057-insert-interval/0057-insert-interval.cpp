@@ -2,11 +2,12 @@ class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
         
+        //pehel push krdo new wale ko fir sort krdena;
         intervals.push_back(newInterval);
-
         sort(intervals.begin(), intervals.end());
 
-         vector<vector<int>>res;
+        //now simple merge interval lga do;
+        vector<vector<int>>res;
         int n=intervals.size();
         sort(intervals.begin(),intervals.end());
 
