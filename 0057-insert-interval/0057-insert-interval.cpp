@@ -7,7 +7,7 @@ public:
         sort(intervals.begin(), intervals.end());
 
         //now simple merge interval lga do;
-        vector<vector<int>>res;
+        vector<vector<int>> res;
         int n=intervals.size();
         sort(intervals.begin(),intervals.end());
 
