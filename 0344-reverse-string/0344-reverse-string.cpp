@@ -11,10 +11,10 @@ public:
             st.push(s[i]); //push the given string into stack;
         }
         //now see the "top" element and store it in a res vector;
-        while(!st.empty())
+        while(!st.empty()) //this means when stack is not empty;
         {
             char c=st.top(); //see
-            st.pop();  //see and delete;
+            st.pop();  //see then delete;
             res.push_back(c);
         }
         // return res; it is a void fun so nothing is returned;
