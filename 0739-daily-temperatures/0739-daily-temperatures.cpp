@@ -21,7 +21,6 @@ public:
                 {
                     res[i]=st.top()-i; //kitne din bd aayega wo warmer day ka index h ye
                 }
-            
             st.push(i);
         }
         return res;
