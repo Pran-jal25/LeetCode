@@ -9,7 +9,7 @@ public:
         {
         sum+=nums[i];
         }
-        // sum of N numbers;
+        //sum of N numbers;
         int ans=(n*(n+1)/2)-sum;
 
         return ans;
