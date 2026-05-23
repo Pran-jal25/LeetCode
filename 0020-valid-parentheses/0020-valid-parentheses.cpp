@@ -10,7 +10,7 @@ public:
 
             if(ch=='(' or ch=='{' or ch=='[')
             {
-                st.push(ch);
+                st.push(ch); //stack me daldo
             }
             else
             {
@@ -18,13 +18,13 @@ public:
                 {
                     return false;
                 }
-
+        // check kro closing bracket open se same h ya nhi;
                 if((ch==')' && st.top()!='(') or
                     (ch=='}' && st.top()!='{') or                       (ch==']' && st.top()!='['))
                 {
                     return false;
                 }
-                st.pop();
+                st.pop(); //or h to pop krdo
                 
             }
         }
