@@ -1,7 +1,7 @@
 class Solution {
   public:
     int getSecondLargest(vector<int> &arr) {
-        // code here
+        //code here
         int n=arr.size();
         
         //first find first largest element;
