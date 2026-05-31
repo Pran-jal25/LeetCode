@@ -1,0 +1,30 @@
+class Solution {
+  public:
+    int getSecondLargest(vector<int> &arr) {
+        // code here
+        int n=arr.size();
+        
+        //first find first largest element;
+        int ans=-1; //not INT_MIN coz if all elements are same then INT_min is largest only thats why
+        
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]>ans)
+            {
+            ans=arr[i];
+            }
+        }
+        
+        //now find the second largest element;
+        int second=-1;
+        
+        for(int i=0;i<n;i++)
+        {
+            if(ans!=arr[i])
+            {
+            second= max(second,arr[i]);
+            }
+        }
+        return second;
+    }
+};
