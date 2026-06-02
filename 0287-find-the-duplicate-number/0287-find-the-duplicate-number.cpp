@@ -3,7 +3,7 @@ public:
     int findDuplicate(vector<int>& nums) {
     //code here
     int slow=nums[0];
-    int fast=nums[0]
+    int fast=nums[0];
 
     //moving pointers
     while(true)
