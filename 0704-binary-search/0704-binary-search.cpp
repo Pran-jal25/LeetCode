@@ -2,6 +2,7 @@ class Solution {
 public:
     int search(vector<int>& arr, int key) 
 {
+    //code here
     int n=arr.size();
     // start,end,mid;
     int start=0,end=n-1,mid;
