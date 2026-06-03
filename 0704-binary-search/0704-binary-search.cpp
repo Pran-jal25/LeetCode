@@ -21,7 +21,9 @@ public:
     start=mid+1;
 
     else
-    end=mid-1;
+    { 
+      end=mid-1;
+    }
     }
     return -1;
 }
