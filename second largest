@@ -14,7 +14,7 @@ class Solution {
             }
         }
         
-        //now find the second largest element;
+        //now find the second largest element
         int second=-1;
         
         for(int i=0;i<n;i++)
