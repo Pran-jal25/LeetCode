@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
+        //code here
         // Negative numbers are not palindrome
         if(x < 0)
             return false;
