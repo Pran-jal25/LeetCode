@@ -4,7 +4,7 @@ public:
         //code here
         int start=0,end=nums.size()-1,first=-1,last=-1,mid;
 
-        //Find first;
+        //Find first
         while(start<=end)
         {
         mid=start + (end-start)/2;
