@@ -10,7 +10,7 @@ public:
         vector<vector<int>> res;
         int n=intervals.size();
         sort(intervals.begin(),intervals.end());
-        //hi
+        
         int start=intervals[0][0];
         int end=intervals[0][1];
 
