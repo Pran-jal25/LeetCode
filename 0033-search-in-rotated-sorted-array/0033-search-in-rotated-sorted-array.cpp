@@ -7,7 +7,6 @@ public:
 
         while(start<=end)
         {
-            
             mid=start + (end-start)/2;
 
             // element founded
