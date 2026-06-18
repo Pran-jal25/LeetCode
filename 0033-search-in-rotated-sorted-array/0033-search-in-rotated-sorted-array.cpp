@@ -1,6 +1,7 @@
 class Solution {
 public:
     int search(vector<int>& arr, int target) {
+        // code here
         int n=arr.size();
         int start=0,end=n-1,mid;
 
