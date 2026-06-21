@@ -1,7 +1,7 @@
 class Solution {
 public:
     string removeDuplicates(string s) {
-        //cod
+        //co
         stack<char>st;
         int n=s.size();
         string res;
