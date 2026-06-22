@@ -1,7 +1,6 @@
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
-        //code
         int start=0,end=nums.size()-1,first=-1,last=-1,mid;
 
         //Find first;
