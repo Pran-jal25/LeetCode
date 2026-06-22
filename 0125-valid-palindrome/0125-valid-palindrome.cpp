@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-        //code
+        //co
         int left = 0;
         int right = s.length() - 1;
 
