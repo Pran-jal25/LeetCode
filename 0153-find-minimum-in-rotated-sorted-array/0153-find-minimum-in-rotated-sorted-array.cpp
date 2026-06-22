@@ -1,7 +1,7 @@
 class Solution {
 public:
     int findMin(vector<int>& nums) {
-        //code    
+        //code 
         int n=nums.size();
 
         int start=0,end=n-1,mid,ans=nums[0];// if rotate hi n hua hoto 0th index wala hi min hoga
