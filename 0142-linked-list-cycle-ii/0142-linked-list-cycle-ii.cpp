@@ -9,7 +9,7 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        //code here;
+        //code here
         if(head==NULL) return NULL;
 
         ListNode*slow=head;
@@ -21,7 +21,7 @@ public:
             slow=slow->next;
             fast=fast->next->next;
 
-            if(slow==fast)
+            if(slow==fast)//means cycle h;
             {
                 slow=head; //find cycle start;
 
