@@ -1,23 +1,25 @@
 class Solution {
 public:
-    int peakIndexInMountainArray(vector<int>& arr) {
+    int peakIndexInMountainArray(vector<int>& nums) {
         //code here
-        int n=arr.size();
-        int start=1,end=n-2,mid;
-        while(start<=end)
-        {
-            mid=start + (end-start)/2;
-            if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1])
-            return mid;
+        int n=nums.size();
+        int first=-1;
+        int low=0,high=n-1,res=-1;
 
-            else if(arr[mid]>arr[mid-1])
-            start=mid+1;
-            
-            else
+        while(low<=high)
+        {
+            int mid=low + (high-low)/2;
+            //find first;
+            if(nums[mid]<nums[mid+1]) //chadhai 
             {
-            end=mid-1;
+                low=mid+1;;
+            } 
+            else //first dhalan ie. peak;
+            {
+                first=mid;
+                high=mid-1; //search left part;
             }
         }
-        return -1;
+        return {first};
     }
 };
