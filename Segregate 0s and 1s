@@ -1,7 +1,7 @@
 class Solution {
   public:
     void segregate0and1(vector<int> &arr) {
-        //c
+        //
         int n=arr.size();
         int left=0,right=n-1;
         
