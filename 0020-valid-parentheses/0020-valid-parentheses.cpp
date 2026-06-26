@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isValid(string s) {
-        //code here
+        //code her
         stack < char>st;
         int n=s.size();
 
