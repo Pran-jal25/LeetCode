@@ -1,6 +1,7 @@
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
+        //code here
         int n=nums.size();
 
         //sum of all numbers;
