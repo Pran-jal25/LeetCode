@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        //co
+        //c
         vector<vector<int>> res;
         int n=nums.size();
         sort(nums.begin(),nums.end()); //sort first;
