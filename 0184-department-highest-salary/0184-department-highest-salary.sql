@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
+# Write your MySQL query statement below 
 select d.name as Department,e.name as Employee,e.salary Salary
 from Department d 
 join Employee e on d.id=e.departmentId
