@@ -1,7 +1,7 @@
 class Solution {
 public:
     int maxSubArray(vector<int>& arr) {
-    //code
+    //cod
         int n=arr.size();
 
         int ans=arr[0];
