@@ -3,7 +3,7 @@ public:
     vector<int> searchRange(vector<int>& nums, int target) {
         int n=nums.size();
         int first=-1,last=-1;
-        int low=0,high=n-1,res=-1;
+        int low=0,high=n-1;
 
         while(low<=high)
         {
