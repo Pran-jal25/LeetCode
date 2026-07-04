@@ -5,6 +5,7 @@ public:
         int n=matrix.size();
         int m=matrix[0].size(); //m= columns
 
+        // bottom-left search approach;
         int row=n-1,col=0;
 
         while(row>=0 && col<m)
