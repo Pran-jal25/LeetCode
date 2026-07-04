@@ -1,33 +1,52 @@
 class Solution {
 public:
-    int search(vector<int>& arr, int target) {
-        int n=arr.size();
-        int start=0,end=n-1,mid;
+    int search(vector<int>& a, int target) {
 
-        while(start<=end)
+        int n = a.size();
+        int low = 0, high = n - 1;
+
+        while(low <= high)
         {
-            mid=start + (end-start)/2;
+            int mid = low + (high-low)/2;
 
-            // element founded
-            if(arr[mid]==target)
-            return mid;
-            // left side sorted
-            else if(arr[0]<=arr[mid])
+            if(a[mid] == target)
+                return mid;
+
+            // Part 1 : mid is in left sorted part
+            if(a[mid] > a[n-1])
             {
-                if(arr[start]<=target && arr[mid]>target)//or left me hi hona h us element ko to ;
-                end=mid-1;
+                if(a[mid] < target)
+                {
+                    low = mid + 1;
+                    continue;              
+                }
                 else
-                start=mid+1;//right me hoga to ye condition
+                {
+                    if(a[0] > target)    
+                        low = mid + 1;
+                    else
+                        high = mid - 1;
+
+                    continue;
+                }
             }
-            //right side sorted
-            else
+            // Part 2 : mid is in right sorted part
+            else                         
             {
-            if(arr[mid]<target && arr[end]>=target)
-            start=mid+1;
-            else
-            end=mid-1;
+                if(a[mid] > target)
+                {
+                    high = mid - 1;
+                }
+                else
+                {
+                    if(a[n-1] < target)  
+                        high = mid - 1;
+                    else
+                        low = mid + 1;
+                }
             }
         }
+
         return -1;
     }
 };
