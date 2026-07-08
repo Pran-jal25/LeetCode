@@ -1,7 +1,7 @@
 class Solution {
 public:
     int mySqrt(int x) {
-        //code he
+        //code h
         if(x<=1)
         return x;
         
