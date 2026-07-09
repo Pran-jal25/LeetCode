@@ -1,7 +1,7 @@
 class Solution {
 public:
     int fib(int n) {
-        //code he
+        //code here
         if (n == 0) return 0;
         if (n == 1) return 1;
 
