@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
-    
+        //code
         //pehel push krdo new wale ko fir sort krdena;
         intervals.push_back(newInterval);
         sort(intervals.begin(), intervals.end());
