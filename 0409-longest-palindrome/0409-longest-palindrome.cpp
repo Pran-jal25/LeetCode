@@ -1,7 +1,7 @@
 class Solution {
 public:
     int longestPalindrome(string s) {
-        //code her
+        //code he
         
         vector<int> lower(26,0);//initialize with 0.
         vector<int> upper(26,0);
