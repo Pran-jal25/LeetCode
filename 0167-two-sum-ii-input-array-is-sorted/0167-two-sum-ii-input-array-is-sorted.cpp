@@ -4,7 +4,7 @@ public:
         int n=numbers.size();
         int start=0,end=n-1;
 
-        // he
+        // h
         while(start<=end)
         {
             if(numbers[start]+numbers[end]==target)
