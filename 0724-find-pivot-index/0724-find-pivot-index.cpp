@@ -1,7 +1,7 @@
 class Solution {
 public:
     int pivotIndex(vector<int>& nums) {
-        //he
+        //h
         
         int n=nums.size();
         int sum=0,left=0,right=0;
