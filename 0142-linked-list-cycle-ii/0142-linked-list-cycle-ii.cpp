@@ -7,6 +7,7 @@
  * };
  */
 class Solution {
+//here 
 public:
     ListNode *detectCycle(ListNode *head) {
         //code here
