@@ -1,7 +1,7 @@
 class Solution {
   public:
     int findKRotation(vector<int> &arr) {
-        // Code Her
+        // Code Here
         int n=arr.size();
         int low=0,high=n-1,res=-1;
         //find the min element to know the rotation;
