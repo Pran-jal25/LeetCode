@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
-        //
+        //code
         int n=nums.size();
         int first=-1,last=-1;
         int low=0,high=n-1;
