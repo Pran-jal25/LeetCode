@@ -1,7 +1,7 @@
 class Solution {
   public:
     vector<int> preGreaterEle(vector<int>& arr) {
-        //  code here
+        //  code her
         int n=arr.size();
         vector<int>res(n);
         res[0]=-1;
