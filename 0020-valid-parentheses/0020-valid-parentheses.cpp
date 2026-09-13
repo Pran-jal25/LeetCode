@@ -2,7 +2,6 @@ class Solution {
 public:
     bool isValid(string s) {
         //code here
-        
         stack < char>st;
         int n=s.size();
 
