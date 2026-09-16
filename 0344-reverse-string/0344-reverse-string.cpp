@@ -1,7 +1,7 @@
 class Solution {
 public:
     void reverseString(vector<char>& s) {
-        //code her
+        //code here:
         
         //USING STACK;
         stack<char>st;
