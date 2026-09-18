@@ -1,6 +1,8 @@
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
+        //code here
+        
         int start=0,end=nums.size()-1,ans=nums.size(),mid;
 
         while(start<=end)
