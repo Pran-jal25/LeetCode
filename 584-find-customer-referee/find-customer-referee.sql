@@ -1,4 +1,6 @@
 # Write your MySQL query statement below
 select name
 from Customer
-where  referee_id is null OR referee_id!=2 ;
+where referee_id!=2 OR referee_id is null ;
+
+-- "<>" this is same as "!=" operator
