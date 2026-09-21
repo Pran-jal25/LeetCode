@@ -3,6 +3,7 @@
 -- "GROUP BY" isliye use krte h kuki ek hi chiz ko bar bar n likhna pde ek baar me hi likh jaye wo;
 
 select s.user_id, IFNULL(ROUND(SUM(action= "confirmed")/COUNT(*),2),0.00)as confirmation_rate
+-- "IF NULL" condition is for user_id=6 coz it does request any confirmation so 0.00;
 from Signups s
 left join Confirmations c
 on s.user_id=c.user_id
