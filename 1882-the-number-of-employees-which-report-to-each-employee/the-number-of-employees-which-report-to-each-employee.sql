@@ -6,6 +6,8 @@ select
     ROUND(AVG(m.age)) as average_age
 from Employees e
 INNER JOIN Employees m
-ON e.employee_id=m.reports_to
+-- e = employee/manager
+-- m = employee who reports
+ON e.employee_id=m.reports_to       
 GROUP BY e.employee_id,e.name
 order by employee_id;
