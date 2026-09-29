@@ -2,6 +2,9 @@ class Solution {
   public:
     int countElements(vector<int>& arr) {
         // code here
+
+        //TCS NQT QUESTION PYQ;
+
         int n=arr.size();
         int max=arr[0]; //first element to max hi h tbhi to wo res me count hua
         int res=1; //coz first element is always in the result
