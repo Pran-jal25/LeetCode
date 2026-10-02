@@ -12,4 +12,4 @@ SELECT
             id-1
         END as id,student
 from SEAT
-order by id ASC
+order by id ASC # isko nhi lgayenge to (id+1) or (id-1) index me rkha rhega
