@@ -1,27 +1,26 @@
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
-        //code here     
-        int start=0,end=nums.size()-1,ans=nums.size(),mid;
+        int start=0,end=nums.size()-1;
 
         while(start<=end)
         {   
-            mid=start+(end-start)/2;
+           int mid=start+(end-start)/2;
             if(nums[mid]==target)
             {
-                ans=mid;
-                break;
+                return mid;
             }
             else if(nums[mid]<target)
             start=mid+1;
             
             else
-            {
-                ans=mid;
+            { 
                 end=mid-1;     
             }
         
         }
-        return ans;
+        // When the target is not found, binary search ends with start just after end.
+        return start; //or end+1
+        
     }
 };
