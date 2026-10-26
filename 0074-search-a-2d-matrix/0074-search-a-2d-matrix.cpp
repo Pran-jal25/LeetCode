@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        
         int n=matrix.size();
         int m=matrix[0].size(); //m= colums
         //matrix[0] means the first row of the matrix.
