@@ -1,6 +1,7 @@
 class Solution {
 public:
     int search(vector<int>& a, int target) {
+        
         int n = a.size();
         int low = 0, high = n - 1;
 
