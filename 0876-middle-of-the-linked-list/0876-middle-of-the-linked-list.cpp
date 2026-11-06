@@ -11,7 +11,7 @@
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
-        //code here
+        //code here 
         // if (head==NULL) return false;
 
         ListNode*slow=head;
